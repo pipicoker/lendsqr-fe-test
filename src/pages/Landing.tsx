@@ -214,7 +214,6 @@ useEffect(() => {
     })
     .then((responseData) => {
         setUser(responseData);
-        console.log(responseData);
     })
 
  }, [id]);

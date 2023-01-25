@@ -1,4 +1,5 @@
 import '../Styles/UserGeneral.css'
+import {useEffect, useState} from 'react'
 
 import userpix from "../images/userpix.png"
 import star from "../images/star.png"
@@ -53,13 +54,29 @@ interface Props {
 }
 
 const UserGeneral = ({user}: Props) => {
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user));
+  }, [user]);
   
+  const [localUser, setLocalUser] = useState<User | null>(null);
+
+  useEffect(() => {
+  const userString = localStorage.getItem("user");
+  if (userString) {
+    setLocalUser(JSON.parse(userString));
+  }
+}, [localStorage.getItem("user")]);
+
+useEffect(() => {
+    console.log('localUser changed', localUser)
+}, [localUser])
   
   return (
     <div className='section'>
       <div>
         {
-          user === null || user === undefined ?
+          localUser === null  ? 
+            
             <p>Loading....</p>
             :
 
@@ -71,8 +88,8 @@ const UserGeneral = ({user}: Props) => {
                   </div>
                   <div className="name">
                     <div className='first-last'>
-                      <p>{user.profile.firstName} {user.profile.lastName}</p>
-                      <p className='act-num'>{user.accountNumber}</p>
+                      <p>{localUser.profile.firstName} {localUser.profile.lastName}</p>
+                      <p className='act-num'>{localUser.accountNumber}</p>
                       </div>
                   </div>
                 </div>
@@ -88,8 +105,8 @@ const UserGeneral = ({user}: Props) => {
                 </div>
 
                 <div className="act-details">
-                  <p className="act-balance">${user.accountBalance}</p>
-                  <p className='bank'>{user.profile.bvn}/Providus Bank</p>
+                  <p className="act-balance">${localUser.accountBalance}</p>
+                  <p className='bank'>{localUser.profile.bvn}/Providus Bank</p>
                 </div>
               </div>
               

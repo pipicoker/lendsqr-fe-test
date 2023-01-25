@@ -58,12 +58,12 @@ const UserCompleteDetails = ({ user }: Props) => {
   const [localUser, setLocalUser] = useState<User | null>(null);
 
   useEffect(() => {
-      const userString = localStorage.getItem("user");
-      if(userString) {
-          const user = JSON.parse(userString);
-          setLocalUser(user);
-      }
-  }, []);
+  const userString = localStorage.getItem("user");
+  if (userString) {
+    setLocalUser(JSON.parse(userString));
+  }
+}, [localStorage.getItem("user")]);
+
   return (
     <div>
       
