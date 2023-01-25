@@ -95,7 +95,7 @@
   text-transform: uppercase;
   color: #39CDCC;
 }
-.login .form-section a {
+.login .form-section .a {
   position: absolute;
   width: 147px;
   height: 17px;
@@ -193,7 +193,7 @@
   .sm-form-section .sm-input-pass {
     margin-top: 16px;
   }
-  .sm-form-section a {
+  .sm-form-section .a {
     position: absolute;
     width: 147px;
     height: 17px;

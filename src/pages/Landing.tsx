@@ -191,7 +191,6 @@ const Landing= () => {
 ]
 
     const [id, setId] = useState(parseInt(""))
-    const [error, setError] = useState<string>();
 const [user, setUser] = useState<User | null | undefined>(null);
 
 
@@ -206,7 +205,7 @@ const [user, setUser] = useState<User | null | undefined>(null);
 }
 useEffect(() => {
             
-    fetch("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/" + `${id}`)
+    fetch(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${id}`)
     .then((response) => {
         if (!response.ok) {
             throw new Error(response.statusText);
@@ -217,19 +216,14 @@ useEffect(() => {
         setUser(responseData);
         console.log(responseData);
     })
-    .catch((error) => {
-        setError(error.message);
-    });
+
  }, [id]);
 
     
     //toggle borrower nav
     const [borrowerNav, setBorrowerNav] = useState<boolean>(false)
     
-    interface borrowerProps {
-    borrowerNav: boolean,
-    setBorrowerNav: (newVal: boolean) => void
-}
+
     
 
     

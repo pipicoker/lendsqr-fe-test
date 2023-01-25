@@ -114,7 +114,9 @@ const Filters = () => {
   };
   return (
     (
-      <div data-testid='users-details'>
+      <>
+        {error ? <div> Error: {error}</div> :
+          <div data-testid='users-details'>
         <div className='main-wrap'>
             <main>  
               <div className='top-heading'>
@@ -227,7 +229,7 @@ const Filters = () => {
                   <p>Blacklist User</p>
               </div>
               <div className='wrap'>
-                  <img src={activate} />
+                  <img src={activate}  alt="ACTIVATE"/>
                   <p>Activate User</p>
               </div>
             </div>
@@ -255,6 +257,8 @@ const Filters = () => {
               
           </div>
       </div>
+        }
+      </>
           
         
   )

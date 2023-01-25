@@ -7,7 +7,6 @@ import Vector from "../images/Vector.png"
 import Vector2 from "../images/Vector2.png"
 import down from "../images/down.png"
 
-
 interface IUserResponse {
   [index: number]: {
     accountBalance: string;
@@ -108,7 +107,10 @@ const UsersDetails: React.FC<FuncProps> = ({GetUserId}) => {
     
 
   return (
-    <div>
+    <>
+      {error ? <div>Error: {error}</div> :
+        
+        <div>
       <div className='main-wrap'>
       <main>  
               <div className='top-heading'>
@@ -194,6 +196,9 @@ const UsersDetails: React.FC<FuncProps> = ({GetUserId}) => {
               
           </div>
     </div>
+      }
+    </>
+    
         
         
   )

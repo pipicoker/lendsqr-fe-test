@@ -42,7 +42,7 @@ const TopNav: React.FC<borrowerProps> = (props) => {
           </div>
         
           
-              <a href="#">Docs</a>
+              < p className='docs'>Docs</p>
           <img src={notification} alt="notification" className="notification" /> 
           
       <img src={user} alt="user-img" className="user-img" />

@@ -7,7 +7,7 @@ const UserHeader = () => {
   return (
     <header>
       
-       <a>
+       <a href='http://localhost:3000/Landing'>
           <img src={back} alt="" />
                 Back to Users
       </a>

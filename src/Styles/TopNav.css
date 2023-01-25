@@ -59,11 +59,11 @@ nav .search-bg .searchicon {
   top: 43%;
   bottom: 43%;
 }
-nav a {
+nav .docs {
   position: absolute;
   left: 76.39%;
   right: 21.04%;
-  top: 44px;
+  top: 25px;
   bottom: 37px;
   font-size: 16px;
   font-weight: 400;

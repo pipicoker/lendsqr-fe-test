@@ -26,7 +26,7 @@ function Login() {
                   
                 <input type="password" placeholder='Password' className='input-pass'/>
               <p className='show'>SHOW</p>
-              <a href="#">FORGOT PASSWORD</a>
+              <p className='a'>FORGOT PASSWORD</p>
               <Link to="/Landing" className='btn-link'>
                   <button >LOG IN</button>
               </Link>
@@ -57,8 +57,8 @@ function Login() {
                 <input type="email" placeholder='Email' className='sm-input-email' />
                   
                 <input type="password" placeholder='Password' className='sm-input-pass'/>
-              <a href="#" className='sm-link'
-              >FORGOT PASSWORD</a>
+              <p className='sm-link'
+              >FORGOT PASSWORD</p>
               <Link to="/Landing" className='sm-btn-link'>
                   <button >LOG IN</button>
               </Link>

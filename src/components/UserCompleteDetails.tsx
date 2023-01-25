@@ -55,8 +55,7 @@ const UserCompleteDetails = ({ user }: Props) => {
     localStorage.setItem("user", JSON.stringify(user));
   }, [user]);
   
-  const [localUser, setLocalUser] = useState(null);
-
+  const [localUser, setLocalUser] = useState<User | null>(null);
 
   useEffect(() => {
       const userString = localStorage.getItem("user");
@@ -66,13 +65,14 @@ const UserCompleteDetails = ({ user }: Props) => {
       }
   }, []);
   return (
-    <div  data-testid="UserCompleteDetails">
+    <div>
       
         {
-          user === null || user === undefined ?
+          localUser === null || user === undefined ?
             <p>Loading....</p>
             :
-
+        
+          
             
           <div className='UserCompleteDetails'>
             <div className="personal-information">
@@ -81,27 +81,27 @@ const UserCompleteDetails = ({ user }: Props) => {
                 <div className='personal-container'>
                   <div>
                     <p className='personal-title'>Full Name</p>
-                    <p className='personal-value' >{user.profile.firstName} {user.profile.lastName}</p>
+                    <p className='personal-value' >{localUser.profile.firstName} {localUser.profile.lastName}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>phone number</p>
-                    <p className='personal-value' >{user.phoneNumber}</p>
+                    <p className='personal-value' >{localUser.phoneNumber}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>email address</p>
-                    <p className='personal-value' >{user.email} </p>
+                    <p className='personal-value' >{localUser.email} </p>
                   </div>
 
                   <div>
                     <p className='personal-title'>bvn</p>
-                    <p className='personal-value' >{user.profile.bvn} </p>
+                    <p className='personal-value' >{localUser.profile.bvn} </p>
                   </div>
 
                   <div>
                     <p className='personal-title'>gender</p>
-                    <p className='personal-value' >{user.profile.gender}</p>
+                    <p className='personal-value' >{localUser.profile.gender}</p>
                   </div>
 
                 </div>
@@ -130,22 +130,22 @@ const UserCompleteDetails = ({ user }: Props) => {
                 <div className='education-container'>
                   <div>
                     <p className='personal-title'>level of education</p>
-                    <p className='personal-value' >{user.education.level}</p>
+                    <p className='personal-value' >{localUser.education.level}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>employment status</p>
-                    <p className='personal-value' >{user.education.employmentStatus}</p>
+                    <p className='personal-value' >{localUser.education.employmentStatus}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>sector of employment</p>
-                    <p className='personal-value' >{user.education.sector} </p>
+                    <p className='personal-value' >{localUser.education.sector} </p>
                   </div>
 
                   <div>
                     <p className='personal-title'>duration of employment</p>
-                    <p className='personal-value' >{user.education.duration} </p>
+                    <p className='personal-value' >{localUser.education.duration} </p>
                   </div>
 
 
@@ -154,15 +154,15 @@ const UserCompleteDetails = ({ user }: Props) => {
                 <div className='education-container' >
                   <div>
                     <p className='personal-title'>office email</p>
-                    <p className='personal-value' >{user.education.officeEmail }</p>
+                    <p className='personal-value' >{localUser.education.officeEmail }</p>
                   </div>
                   <div>
                     <p className='personal-title'>monthly income</p>
-                    <p className='personal-value' >{user.education.monthlyIncome}</p>
+                    <p className='personal-value' >{localUser.education.monthlyIncome}</p>
                   </div>
                   <div>
                     <p className='personal-title'>loan payment</p>
-                    <p className='personal-value' >{user.education.loanRepayment}</p>
+                    <p className='personal-value' >{localUser.education.loanRepayment}</p>
                   </div>
                 </div>
               </div>
@@ -175,17 +175,17 @@ const UserCompleteDetails = ({ user }: Props) => {
                 <div className='social_guarantor-container'>
                   <div>
                     <p className='personal-title'>twitter</p>
-                    <p className='personal-value' >{user.socials.twitter}</p>
+                    <p className='personal-value' >{localUser.socials.twitter}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>facebook</p>
-                    <p className='personal-value' >{user.socials.facebook}</p>
+                    <p className='personal-value' >{localUser.socials.facebook}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>instagram</p>
-                    <p className='personal-value' >{user.socials.instagram} </p>
+                    <p className='personal-value' >{localUser.socials.instagram} </p>
                   </div>
 
 
@@ -202,22 +202,22 @@ const UserCompleteDetails = ({ user }: Props) => {
                 <div className='social_guarantor-container'>
                   <div>
                     <p className='personal-title'>full name</p>
-                    <p className='personal-value' >{user.guarantor.firstName} {user.guarantor.lastName}</p>
+                    <p className='personal-value' >{localUser.guarantor.firstName} {localUser.guarantor.lastName}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>phone number</p>
-                    <p className='personal-value' >{user.guarantor.phoneNumber}</p>
+                    <p className='personal-value' >{localUser.guarantor.phoneNumber}</p>
                   </div>
 
                   <div>
                     <p className='personal-title'>email address</p>
-                    <p className='personal-value' >{user.guarantor.address} </p>
+                    <p className='personal-value' >{localUser.guarantor.address} </p>
                   </div>
 
                   <div>
                     <p className='personal-title'>relationship</p>
-                    <p className='personal-value' >{user.guarantor.gender} </p>
+                    <p className='personal-value' >{localUser.guarantor.gender} </p>
                   </div>
 
                 </div>
