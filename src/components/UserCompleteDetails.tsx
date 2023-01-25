@@ -226,37 +226,7 @@ const UserCompleteDetails = ({ user }: Props) => {
               
             </div>
 
-            {/* <div className="personal-information">
-              <div>
-                <div className='social_guarantor-container'>
-                  <div>
-                    <p className='personal-title'>full name</p>
-                    <p className='personal-value' >{user.guarantor.firstName} {user.guarantor.lastName}</p>
-                  </div>
-
-                  <div>
-                    <p className='personal-title'>phone number</p>
-                    <p className='personal-value' >{user.guarantor.phoneNumber}</p>
-                  </div>
-
-                  <div>
-                    <p className='personal-title'>email address</p>
-                    <p className='personal-value' >{user.guarantor.address} </p>
-                  </div>
-
-                  <div>
-                    <p className='personal-title'>relationship</p>
-                    <p className='personal-value' >{user.guarantor.gender} </p>
-                  </div>
-
-
-
-                </div>
-
-              </div>
-              
-            </div> */}
-
+           
           </div>
             
         }
