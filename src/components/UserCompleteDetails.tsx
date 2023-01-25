@@ -68,7 +68,7 @@ const UserCompleteDetails = ({ user }: Props) => {
     <div>
       
         {
-          localUser === null || user === undefined ?
+          localUser === null ?
             <p>Loading....</p>
             :
         
