@@ -1,0 +1,136 @@
+.section {
+  position: absolute;
+  top: 290px;
+  left: 343px;
+  box-sizing: border-box;
+  width: 1037px;
+  height: 210px;
+  background: #FFFFFF;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+.section .box {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+.section .sect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+.section .sect .user-pix {
+  width: 100px;
+  height: 100px;
+  margin: 30px 0 0 30px;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 63, 125, 0.16);
+}
+.section .sect .user-pix img {
+  width: 27.92px;
+  height: 29.3px;
+  color: #213F7D;
+}
+.section .sect .name .first-last {
+  width: 140px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #213F7D;
+  line-height: 25.81px;
+  border-right: solid 1px #545F7D;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+.section .sect .name .act-num {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #545F7D;
+}
+.section .usersTier {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-right: solid 1px #545F7D;
+}
+.section .usersTier p {
+  font-size: 14px;
+  font-family: 500;
+  color: #545F7D;
+  white-space: nowrap;
+}
+.section .act-details {
+  padding-left: 30px;
+}
+.section .act-details .act-balance {
+  font-size: 22px;
+  color: #213F7D;
+  font-weight: 500;
+  line-height: 26px;
+}
+.section .act-details .bank {
+  font-size: 12px;
+  font-weight: 400;
+  color: #213F7D;
+  line-height: 14px;
+  white-space: nowrap;
+}
+.section .details-buttons {
+  padding: 30px 36px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.section .details-buttons .detail-btn {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+.section .details-buttons .first-detail-btn {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #39CDCC;
+  color: #39CDCC;
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    width: 90vw;
+    left: auto;
+    margin: 20px 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .user-pix {
+    display: none !important;
+  }
+  .act-details {
+    padding-left: 10px !important;
+  }
+  .first-last {
+    font-size: 16px;
+    font-weight: 400;
+    color: #213F7D;
+    line-height: 25.81px;
+  }
+  .usersTier {
+    width: 50px !important;
+    padding-left: 0 !important;
+  }
+  .details-buttons {
+    padding-top: 60px !important;
+    padding-left: 0 !important;
+  }
+  .details-buttons .hide {
+    display: none !important;
+  }
+}/*# sourceMappingURL=UserGeneral.css.map */

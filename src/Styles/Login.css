@@ -1,0 +1,259 @@
+.login {
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.login .sec .sec-header {
+  display: flex;
+}
+.login .sec .sec-header .logo {
+  position: absolute;
+  width: 24.75px;
+  height: 25px;
+  left: 97px;
+  top: 107.67px;
+}
+.login .sec .sec-header .lendsqr {
+  position: absolute;
+  width: 138.44px;
+  height: 36px;
+  left: 132.33px;
+  top: 106px;
+}
+.login .sec .pablo {
+  position: absolute;
+  width: 600px;
+  height: 337.57px;
+  left: 67px;
+  top: 281px;
+}
+.login .form-section {
+  width: 704px;
+  height: 900px;
+  left: 736px;
+  top: -5px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+}
+.login .form-section h3 {
+  position: absolute;
+  width: 183px;
+  height: 55px;
+  left: 836px;
+  top: 215px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: -0.04em;
+  color: #213F7D;
+}
+.login .form-section .p {
+  position: absolute;
+  width: 194px;
+  height: 28px;
+  left: 836px;
+  top: 290px;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #545F7D;
+}
+.login .form-section input {
+  box-sizing: border-box;
+  position: absolute;
+  width: 447px;
+  height: 50px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+}
+.login .form-section .input-email {
+  left: 836px;
+  top: 368px;
+}
+.login .form-section .input-pass {
+  left: 836px;
+  top: 442px;
+}
+.login .form-section .show {
+  position: absolute;
+  width: 49.41px;
+  height: 12.5px;
+  left: 1215.95px;
+  top: 450px;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39CDCC;
+}
+.login .form-section a {
+  position: absolute;
+  width: 147px;
+  height: 17px;
+  left: 836px;
+  top: 516px;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #39CDCC;
+}
+.login .form-section .btn-link {
+  position: absolute;
+  left: 836px;
+  top: 563px;
+}
+.login .form-section .btn-link button {
+  width: 447px;
+  height: 48px;
+  background-color: #39CDCC;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.sm-login {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .sm-login {
+    display: block;
+  }
+  .sm-login .sm-logo {
+    width: 24.75px;
+    height: 25px;
+    padding-top: 30px;
+  }
+  .sm-login .sm-logo .logo {
+    position: absolute;
+    width: 24.75px;
+    height: 25px;
+    margin-left: 20px;
+  }
+  .sm-login .sm-logo .lendsqr {
+    position: absolute;
+    width: 138.44px;
+    height: 36px;
+    margin-left: 55px;
+  }
+  .sm-login .sm-pablo {
+    width: 90vw;
+    padding-top: 50px;
+  }
+  .sm-form-section {
+    margin: 20px 30px 20px 30px;
+  }
+  .sm-form-section h3 {
+    width: 183px;
+    height: 55px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+    color: #213F7D;
+  }
+  .sm-form-section .p {
+    width: 194px;
+    height: 28px;
+    font-family: "Avenir Next";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #545F7D;
+  }
+  .sm-form-section input {
+    box-sizing: border-box;
+    width: 400px;
+    height: 50px;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+  }
+  .sm-form-section .sm-input-pass {
+    margin-top: 16px;
+  }
+  .sm-form-section a {
+    position: absolute;
+    width: 147px;
+    height: 17px;
+    left: 836px;
+    top: 516px;
+    font-family: "Avenir Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #39CDCC;
+  }
+  .sm-form-section .btn-link {
+    position: absolute;
+    left: 836px;
+    top: 563px;
+  }
+  .sm-form-section .btn-link button {
+    width: 447px;
+    height: 48px;
+    background-color: #39CDCC;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
+  .sm-form-section .sm-link {
+    position: unset !important;
+    font-family: "Avenir Next";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #39CDCC;
+  }
+  .sm-form-section .sm-btn-link {
+    position: unset !important;
+  }
+  .sm-form-section .sm-btn-link button {
+    width: 400px;
+    height: 48px;
+    margin-top: 30px;
+    background-color: #39CDCC;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
+  .login {
+    display: none !important;
+  }
+}/*# sourceMappingURL=Login.css.map */

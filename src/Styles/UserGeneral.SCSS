@@ -1,0 +1,174 @@
+@import "variables";
+
+.section{
+    position: absolute;
+    top: 290px;
+    left: 343px;
+    box-sizing: border-box;
+    width: 1037px;
+    height: 210px;
+    
+    background: $light;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: $shadow5;
+    border-radius: 4px;
+
+    .box{
+        display: flex;
+        align-items: center;
+        width: 80px;
+       
+        
+    }
+
+    .sect{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: center;
+
+        .user-pix {
+                width: 100px;
+                height: 100px;
+                margin: 30px 0 0 30px;
+                border-radius: 50%;
+                display: flex;
+                flex-shrink: 0;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(33, 63, 125, 0.16);
+        
+                img {
+                    width: 27.92px;
+                    height: 29.3px;
+                    color: $dark-blue;
+                }
+            }
+        
+        .name {
+                    
+            
+            .first-last{
+                width: 140px;
+                font-size: $text-xl2;
+                font-weight: $font-normal2;
+                color: $dark-blue;
+                line-height: 25.81px;
+                border-right: solid 1px $light-blue;
+                white-space: nowrap;
+                padding-right: 20px;
+            }
+            
+            .act-num{
+                font-weight: $font-normal;
+                font-size: $text-sm;
+                line-height: 16px;
+            
+                color: $light-blue;
+            }
+        }
+    }
+
+    .usersTier{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+                border-right: solid 1px $light-blue;
+        p{
+            font-size: $text-sm;
+            font-family: $font-normal2;
+            color: $light-blue;
+            white-space: nowrap;
+        }
+    
+    }
+
+    .act-details{
+        padding-left: 30px;
+
+        .act-balance{
+            font-size: $text-xl2;
+            color: $dark-blue;
+            font-weight: $font-normal2;
+            line-height: 26px;
+        }
+
+        .bank{
+            font-size: $text-xs;
+            font-weight: $font-normal;
+            color: $dark-blue;
+            line-height: 14px;
+            white-space: nowrap;
+        }
+    }
+
+    .details-buttons{
+        padding:30px 36px 0 30px;
+        // top: 471px;
+        display: flex;
+        justify-content: space-between;
+        // grid-template-columns: repeat(6, 1fr);
+        
+        .detail-btn{
+            font-size: $text-md;
+            font-weight: $font-normal;
+            color: $black;
+        }
+
+        .first-detail-btn{
+            font-size: $text-md;
+            font-weight: $font-normal;
+            padding-bottom: 10px;
+            border-bottom: solid 2px $light-cyan;
+            color: $light-cyan;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .section{
+        width: 90vw;
+        left: auto;
+        margin: 20px 20px 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        
+    }
+
+        .user-pix {
+            display: none !important;
+
+            
+        }
+        .act-details{
+            padding-left: 10px !important;
+        }
+
+        .first-last {
+            // width: 140px;
+            font-size: $text-md;
+            font-weight: $font-normal;
+            color: $dark-blue;
+            line-height: 25.81px;
+        }
+
+            .usersTier {
+                width: 50px !important;
+                padding-left: 0 !important;
+    
+            }
+
+            .details-buttons{
+                padding-top: 60px !important;
+                padding-left: 0 !important;
+                .hide{
+
+                   display: none !important;
+                }
+            }
+}

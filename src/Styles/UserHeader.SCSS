@@ -1,0 +1,76 @@
+@import "variables";
+
+header{
+    position: absolute;
+    top: 165px;
+    left: 344.88px;
+    
+    a{
+        font-size: $text-md;
+        line-height: 19px;
+        font-weight: $font-normal;
+        color: $light-blue;
+        cursor: pointer;
+        img{
+            padding-right: 14.41px;
+        }
+    }
+
+    .navigation{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 1037px;
+        height: 60px;
+        justify-content: space-between;
+        h4{
+            font-size: $text-lg;
+            font-weight: $font-normal2;
+            color: $dark-blue;
+            line-height: 28.15px;
+        }
+        .navigation-buttons{
+            display: flex;
+            .btn-1{
+                @include button2;
+                color: $button-red;
+                border-color: $button-red;
+                margin-right: 20px
+            }
+            .btn-2{
+                @include button2;
+                color: $light-cyan;
+                border-color: $light-cyan;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90vw;
+        left: auto ;
+
+        .navigation{
+            width: 90vw;
+            height: 100px;
+            margin-top: 20px;
+        
+            // justify-content: space-between;
+
+            .navigation-buttons{
+                display: flex;
+                flex-direction: row;
+
+                .btn-1 {
+                    width: 120px !important;
+                    }
+                .btn-2 {
+                    width: 120px !important;
+                    }
+            }
+        }
+    }
+}

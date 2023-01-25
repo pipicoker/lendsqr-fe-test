@@ -1,0 +1,59 @@
+$light: #FFFFFF;
+$dark-blue: #213F7D;
+$light-blue: #545F7D;
+$light-blue2: rgba(33, 63, 125, 0.1);
+$light-cyan: #39CDCC;
+$light-purp: #DF18FF;
+$deep-purp: #5718FF;
+$light-orange: #F55F44;
+$deep-orange: #FF3366;
+$button-red: #E4033B;
+$black: rgba(0,0,0,0.8);
+
+
+$text-xs: 12px;
+$text-sm: 14px;
+$text-md: 16px;
+$text-lg: 20px;
+$text-xl2: 22px;
+$text-xl: 24px;
+
+
+
+$font-normal: 400;
+$font-normal2: 500;
+$semi-bold: 600;
+
+
+$sans: Work Sans;
+
+$shadow1: 0 5px 20px rgba(0, 0, 0, 0.04);
+$shadow2: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+$shadow3: 3px 5px rgba(0, 0, 0, 0.04);
+$shadow4: 3px 5px 20px 0 rgba(0, 0, 0, 0.04);
+$shadow5: 3px 5px 20px  rgba(0, 0, 0, 0.04);
+
+
+@mixin button {
+    box-sizing: border-box;
+    width: 98px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    border-width: 1px;
+    cursor: pointer;
+
+}
+
+@mixin button2 {
+    box-sizing: border-box;
+    width: 170px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    border-width: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}

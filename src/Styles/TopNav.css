@@ -1,0 +1,143 @@
+nav {
+  position: absolute;
+  width: 1440px;
+  height: 100px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #FFFFFF;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+}
+nav .logo {
+  position: absolute;
+  display: flex;
+  justify-items: center;
+  left: 30px;
+  top: 36.39px;
+}
+nav .logo .union {
+  height: 20.84px;
+  width: 20.63px;
+}
+nav .logo .lendsqr {
+  width: 115.37px;
+  height: 30px;
+  top: 35px;
+  left: 59.44px;
+  padding-left: 8.61px;
+}
+nav input {
+  box-sizing: border-box;
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: 23.82%;
+  right: 48.4%;
+  top: 30px;
+  padding-left: 20px;
+  bottom: 30px;
+  background: #FFFFFF;
+  opacity: 0.2;
+  border: 1px solid #213F7D;
+  border-radius: 8px;
+}
+nav .search-bg {
+  position: absolute;
+  width: 56px;
+  height: 40px;
+  left: 687px;
+  top: 30px;
+  background: #39CDCC;
+}
+nav .search-bg .searchicon {
+  position: absolute;
+  width: 13.97px;
+  height: 14px;
+  left: 49.17%;
+  right: 49.86%;
+  top: 43%;
+  bottom: 43%;
+}
+nav a {
+  position: absolute;
+  left: 76.39%;
+  right: 21.04%;
+  top: 44px;
+  bottom: 37px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-decoration: underline;
+  color: #213F7D;
+}
+nav .notification {
+  position: absolute;
+  left: 82.16%;
+  right: 12.16%;
+  top: 38.7px;
+  bottom: 5.88%;
+  width: 19.67px;
+  height: 22.74px;
+}
+nav .user-img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 86.11%;
+  right: 10.56%;
+  top: 19.76px;
+  bottom: 20.24%;
+  border-radius: 50%;
+}
+nav .name-wrap {
+  display: flex;
+}
+nav .user-name {
+  position: absolute;
+  top: 30px;
+  left: 90.14%;
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+}
+nav .arr {
+  position: absolute;
+  width: 7.34px;
+  height: 4.15px;
+  left: 1298px;
+  right: 31.66%;
+  top: 8.18px;
+  bottom: 38.35%;
+  background: #213F7D;
+}
+nav .hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 100vw;
+  }
+  nav input, nav a, nav .notification, nav .user-name, nav .user-img {
+    display: none;
+  }
+  nav .search-bg {
+    display: none;
+  }
+  nav .hamburger-div {
+    display: flex;
+    align-items: center;
+  }
+  nav .hamburger {
+    display: flex;
+    position: absolute;
+    top: 44%;
+    left: 90%;
+    font-size: 24px;
+    color: #213F7D;
+  }
+}/*# sourceMappingURL=TopNav.css.map */

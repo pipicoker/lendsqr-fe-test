@@ -1,0 +1,85 @@
+@import "variables";
+
+.UserCompleteDetails{
+    position: absolute;
+    left: 343px;
+    top: 530px;
+    box-sizing: border-box;
+    width: 1037px;
+    height: 910px;
+    background: $light;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: $shadow4;
+    border-radius: 4px;
+
+    .personal-information{
+        border-bottom: 1px solid $dark-blue;
+        margin: 0 30px 0 30px;
+        padding-bottom: 20px;
+        font-style: normal;
+        h4{
+            font-weight: $font-normal2;
+            font-size: $text-md;
+            line-height: 19px;
+            color: $dark-blue;
+        }
+        
+
+        .personal-container {
+                display: grid;
+          
+                grid-template-columns: 17% 20% 30% 18% 15%;
+            }
+        .education-container {
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25% ;
+            }
+        .social_guarantor-container {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 40% ;
+            }
+
+        .personal-title{
+            font-style: normal;
+                font-weight: $font-normal;
+                font-size: $text-xs;
+                margin-top: 30px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: $light-blue;
+        } 
+        
+        .personal-value{
+            font-weight: $font-normal2;
+            font-size: $text-md;
+            line-height: 19px;
+            color: $light-blue;
+        }
+    }
+
+    .guarantor{
+        border-bottom: none !important;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .UserCompleteDetails{
+        left: 0;
+     width: 90vw;
+     height: 1800px;
+     margin-left: 20px;
+     margin-right: 20px;
+    }
+        .personal-container {
+                grid-template-columns: 60% 40% !important;
+                gap: 23px;
+        }
+        .education-container {
+            grid-template-columns: 50% 50% !important;
+        }
+    
+                .social_guarantor-container {
+                    grid-template-columns: 50% 50% !important;
+                }
+}

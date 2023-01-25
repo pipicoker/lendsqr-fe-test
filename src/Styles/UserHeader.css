@@ -1,0 +1,81 @@
+header {
+  position: absolute;
+  top: 165px;
+  left: 344.88px;
+}
+header a {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #545F7D;
+  cursor: pointer;
+}
+header a img {
+  padding-right: 14.41px;
+}
+header .navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 1037px;
+  height: 60px;
+  justify-content: space-between;
+}
+header .navigation h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #213F7D;
+  line-height: 28.15px;
+}
+header .navigation .navigation-buttons {
+  display: flex;
+}
+header .navigation .navigation-buttons .btn-1 {
+  box-sizing: border-box;
+  width: 170px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  border-width: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #E4033B;
+  border-color: #E4033B;
+  margin-right: 20px;
+}
+header .navigation .navigation-buttons .btn-2 {
+  box-sizing: border-box;
+  width: 170px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  border-width: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #39CDCC;
+  border-color: #39CDCC;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90vw;
+    left: auto;
+  }
+  header .navigation {
+    width: 90vw;
+    height: 100px;
+    margin-top: 20px;
+  }
+  header .navigation .navigation-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  header .navigation .navigation-buttons .btn-1 {
+    width: 120px !important;
+  }
+  header .navigation .navigation-buttons .btn-2 {
+    width: 120px !important;
+  }
+}/*# sourceMappingURL=UserHeader.css.map */
