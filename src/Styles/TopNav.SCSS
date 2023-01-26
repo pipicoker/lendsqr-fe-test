@@ -48,6 +48,7 @@ nav{
         opacity: 0.2;
         border: 1px solid $dark-blue;
         border-radius: 8px;
+        font-family: $sans;
     }
 
     .search-bg{
@@ -88,6 +89,7 @@ nav{
         line-height: 19px;
         text-decoration: underline;
         color: $dark-blue;
+        font-family: $roboto;
 
     }
     
@@ -125,6 +127,7 @@ nav{
         font-size: $text-md;
         line-height: 19px;
         color: $dark-blue;
+        font-family:  $sans;
     }
 
     .arr{

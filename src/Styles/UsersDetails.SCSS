@@ -4,6 +4,7 @@
     position: absolute;
     left: 343px;
     top: 428px;
+        font-family: $sans;
 }
 
 main{
@@ -124,8 +125,6 @@ main{
         }
 
     .wrapper{
-        // border-bottom: 8px;
-        // border-color: green;
         
 
         .bottom-border:not(:last-child) {
@@ -202,6 +201,7 @@ main{
 }
 
 .pagination {
+        font-family: $sans;
     display: flex;
     position: absolute;
     position: absolute;
@@ -230,12 +230,12 @@ main{
     background-color: rgba(33, 63, 125, 0.1);
 }
 .nextPrevLink-btn{
-    // width: 6.57px;
-    // height: 11.21px;
+        font-family: $sans;
     color: $dark-blue;
 }
 
 .showing{
+        font-family: $sans;
     width: 100%;
     display: flex;
         position: absolute;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap");
 aside {
   position: absolute;
   z-index: 999;
@@ -31,6 +32,7 @@ aside .heading {
   padding-left: 10px;
   line-height: 18.77px;
   color: #213F7D;
+  font-family: Work Sans;
 }
 aside h3 {
   font-size: 12px;
@@ -38,6 +40,7 @@ aside h3 {
   color: #213F7D;
   line-height: 14.08px;
   text-transform: uppercase;
+  font-family: Work Sans;
 }
 aside li {
   list-style: none;

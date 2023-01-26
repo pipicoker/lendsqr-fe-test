@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap");
 .main-wrap {
   position: absolute;
   left: 343px;
   top: 428px;
+  font-family: Work Sans;
 }
 
 main {
@@ -168,6 +170,7 @@ main .wrapper .user-row .status p {
 }
 
 .pagination {
+  font-family: Work Sans;
   display: flex;
   position: absolute;
   position: absolute;
@@ -198,10 +201,12 @@ main .wrapper .user-row .status p {
 }
 
 .nextPrevLink-btn {
+  font-family: Work Sans;
   color: #213F7D;
 }
 
 .showing {
+  font-family: Work Sans;
   width: 100%;
   display: flex;
   position: absolute;

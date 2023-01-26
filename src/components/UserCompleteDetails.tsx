@@ -71,7 +71,6 @@ const UserCompleteDetails = ({ user }: Props) => {
           localUser === null ?
             <p>Loading....</p>
             :
-        
           
             
           <div className='UserCompleteDetails'>
