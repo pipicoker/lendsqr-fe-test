@@ -50,8 +50,9 @@ interface Props {
 }
 
 const UserCompleteDetails = ({ user }: Props) => {
- 
-  useEffect(() => {
+
+
+useEffect(() => {
     localStorage.setItem("user", JSON.stringify(user));
   }, [user]);
   
@@ -64,13 +65,16 @@ const UserCompleteDetails = ({ user }: Props) => {
   }
 }, [localStorage.getItem("user")]);
 
+
+
   return (
     <div>
       
         {
-          localUser === null ?
+          localUser === null  ?
             <p>Loading....</p>
             :
+        
           
             
           <div className='UserCompleteDetails'>
@@ -139,8 +143,8 @@ const UserCompleteDetails = ({ user }: Props) => {
 
                   <div>
                     <p className='personal-title'>sector of employment</p>
-                    <p className='personal-value' >{localUser.education.sector} </p>
-                  </div>
+                    <p className='personal-value'>{localUser.education.sector}</p>
+                </div>
 
                   <div>
                     <p className='personal-title'>duration of employment</p>
@@ -225,7 +229,8 @@ const UserCompleteDetails = ({ user }: Props) => {
               
             </div>
 
-           
+            
+
           </div>
             
         }
