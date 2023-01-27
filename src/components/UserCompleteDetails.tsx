@@ -50,25 +50,35 @@ interface Props {
 }
 
 const UserCompleteDetails = ({ user }: Props) => {
-
-
 useEffect(() => {
     localStorage.setItem("user", JSON.stringify(user));
   }, [user]);
   
   const [localUser, setLocalUser] = useState<User | null>(null);
 
+  const [userString, setUserString] = useState<string | null>(null);
   useEffect(() => {
-  const userString = localStorage.getItem("user");
+    const newuserString = localStorage.getItem("user");
+    setUserString(newuserString)
+    console.log(newuserString);
   if (userString) {
     setLocalUser(JSON.parse(userString));
+    
+    
   }
-}, [localStorage.getItem("user")]);
+}, [user, userString]);
+
+// useEffect(() => {
+//     console.log('localUser changed', localUser)
+// }, [localUser])
+
+
 
 
 
   return (
     <div>
+      <div>
       
         {
           localUser === null  ?
@@ -236,6 +246,8 @@ useEffect(() => {
         }
     
     </div>
+    </div>
+    
     
   )
 }
