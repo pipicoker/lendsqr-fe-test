@@ -144,7 +144,7 @@
                 width: 447px;
                 height: 48px;
                 background-color: $light-cyan;
-                border-color: $light-cyan;
+                border: none !important;
                 border-radius: 8px;
                 font-weight: $semi-bold;
                 font-size: $text-sm;
@@ -279,7 +279,7 @@
                            height: 48px;
                         margin-top: 30px;
                            background-color: $light-cyan;
-                           border-color: $light-cyan;
+                           border: none !important;
                            border-radius: 8px;
                            font-weight: $semi-bold;
                            font-size: $text-sm;
